@@ -1,0 +1,101 @@
+<!--Contactos, redes sociales y E-Ticket-->
+<nav class="bg-slate-900 flex text-white font-light p-3 justify-between w-full">
+  <div class="md:flex hidden">
+    <!--Teléfono-->
+    <div
+      class="mx-3 hover:text-ataria-color transition duration-300 cursor-pointer"
+    >
+      <i class="fa-solid fa-phone mr-2"></i>(+56) 9 40617279
+    </div>
+    <!--Correo-->
+    <div
+      class="mx-3 hover:text-ataria-color transition duration-300 cursor-pointer"
+    >
+      <i class="fa-solid fa-envelope mr-2"></i>contacto@atariatechnology.cl
+    </div>
+  </div>
+
+  <div class="flex">
+    <button
+      href="#"
+      class="block p-1 rounded-sm justify-center align-middle text-center font-semibold text-xs bg-white text-black hover:text-white hover:bg-ataria-color transition duration-300"
+    >
+      E-Ticket
+    </button>
+    <div class="flex text-xl">
+      <a href="#" class="mx-1 hover:text-ataria-color transition duration-300">
+        <i class="fa-brands fa-instagram mx-2"></i>
+      </a>
+      <a href="#" class="mx-1 hover:text-ataria-color transition duration-300">
+        <i class="fa-brands fa-linkedin mx-2"></i>
+      </a>
+      <a href="#" class="mx-1 hover:text-ataria-color transition duration-300">
+        <i class="fa-brands fa-square-x-twitter mx-2"></i>
+      </a>
+      <a href="#" class="mx-1 hover:text-ataria-color transition duration-300">
+        <i class="fa-brands fa-square-facebook mx-2"></i>
+      </a>
+    </div>
+  </div>
+  <!--Redes sociales-->
+</nav>
+<!--NavBar-->
+<header id="navbar">
+  <nav class="bg-slate-50 flex h-auto w-full justify-between px-10">
+    <!--Logo-->
+    <a class="py-3" href="#">
+      <img src="assets/logo.jpg" alt="Logo Ataria" class="w-full h-20" />
+    </a>
+    <!--Opciones-->
+    <div class="md:flex hidden align-middle items-center text-center">
+      <a
+        href="#"
+        class="flex nav-link active items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
+      >
+        Inicio
+      </a>
+      <a
+        href="#"
+        class="flex nav-link items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
+      >
+        Soluciones
+      </a>
+      <a
+        href="#"
+        class="flex nav-link items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
+      >
+        Quiénes somos
+      </a>
+      <a
+        href="#"
+        class="flex nav-link items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
+      >
+        Contacto
+      </a>
+    </div>
+    <div class="md:hidden flex">
+      <button id="mobile-menu-button" class="text-slate-700">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="md:hidden hidden bg-slate-50 p-5">
+    <a href="#" class="block text-black text-center p-3">Inicio</a>
+    <a href="#" class="block text-black text-center p-3">Soluciones</a>
+    <a href="#" class="block text-black text-center p-3">Quiénes somos</a>
+    <a href="#" class="block text-black text-center p-3">Contacto</a>
+  </div>
+</header>

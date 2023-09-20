@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MKG | SERVICIOS TI Y COMUNICACIONES - Ataria Technology</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!--Swiper styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!--Animate.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
+  <!--SwiperJS-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!--Font Awesome-->
+  <script
+    src="https://kit.fontawesome.com/8d882167f9.js"
+    crossorigin="anonymous"
+  ></script>
+  <!--Navbar Responsive-->
+  <script type="module">
+    document
+      .getElementById("mobile-menu-button")
+      .addEventListener("click", function () {
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenu.classList.toggle("hidden");
+      });
+  </script>
+  <!--Footer Responsive-->
+  <script type="module">
+    document
+      .querySelector(".dropdown-container .enlaces")
+      .addEventListener("click", function () {
+        document.querySelector(".enlaces ul").classList.toggle("hidden");
+        document
+          .querySelector(".enlaces .arrowIcon i.fa-solid")
+          .classList.toggle("fa-chevron-up");
+        document
+          .querySelector(".enlaces .arrowIcon i.fa-solid")
+          .classList.toggle("fa-chevron-down");
+      });
+
+    document
+      .querySelector(".dropdown-container .soporte")
+      .addEventListener("click", function () {
+        document.querySelector(".soporte ul").classList.toggle("hidden");
+        document
+          .querySelector(".soporte .arrowIcon i.fa-solid")
+          .classList.toggle("fa-chevron-up");
+        document
+          .querySelector(".soporte .arrowIcon i.fa-solid")
+          .classList.toggle("fa-chevron-down");
+      });
+
+    document
+      .querySelector(".dropdown-container .servicios")
+      .addEventListener("click", function () {
+        document.querySelector(".servicios ul").classList.toggle("hidden");
+        document
+          .querySelector(".servicios .arrowIcon i.fa-solid")
+          .classList.toggle("fa-chevron-up");
+        document
+          .querySelector(".servicios .arrowIcon i.fa-solid")
+          .classList.toggle("fa-chevron-down");
+      });
+  </script>
+  <!--Swiper Carrusel-->
+  <script type="module">
+    const swiper1 = new Swiper(".swiper", {
+      direction: "horizontal",
+      loop: "true",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        typeof: "bullets",
+        clickable: true,
+      },
+    });
+  </script>
+  <!--Swiper marcas-->
+  <script type="module">
+    const swiper2 = new Swiper(".swiper-2", {
+      direction: "horizontal",
+      loop: "true",
+      speed: 7000,
+      autoplay: {
+        delay: 1000,
+      },
+    });
+  </script>
+</html>
