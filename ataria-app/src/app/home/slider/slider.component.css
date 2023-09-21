@@ -5,17 +5,17 @@
   
 .img-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../../assets/wallpaper1.jpg);
+    url(../../../assets/wallpaper1.jpg);
 }
 
 .img-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../../assets/wallpaper2.jpg);
+    url(../../../assets/wallpaper2.jpg);
 }
 
 .img-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../../assets/wallpaper3.jpg);
+    url(../../../assets/wallpaper3.jpg);
 }
 
 .swiper-slide {

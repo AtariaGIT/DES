@@ -1,15 +1,33 @@
 <div class="font-custom">
-  <app-navbar/>
-
-  <!--Sobre nosotros-->
-
+  <app-navbar (sectionSelected)="onSectionSelected($event)" />
 
   <!--Inicio-->
-  <app-slider/>
-  <app-servicios/>
-  <app-sobre-ataria/>
-  <app-slider-marcas/>
-  <app-contacto/>
+  <section *ngIf="selectedSection === 'inicio'">
+    <app-slider />
+    <app-servicios />
+    <app-sobre-ataria />
+    <app-slider-marcas />
+    <app-contacto />
+  </section>
+
+  <!--Sobre nosotros-->
+  <section *ngIf="selectedSection === 'nosotros'">
+    <app-banner/>
+    <app-quienes-somos/>
+    <app-mision-vision/>
+    <app-valores/>
+    <app-opiniones/>
+  </section>
+
+  <!--Servicios-->
+  <section *ngIf="selectedSection === 'servicios'">
+    <h1>servicios</h1>
+  </section>
+
+  <!--Contacto-->
+  <section *ngIf="selectedSection === 'contacto'">
+    <h1>contacto</h1>
+  </section>
 
   <app-footer/>
 </div>

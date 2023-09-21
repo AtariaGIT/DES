@@ -49,26 +49,26 @@
     <!--Opciones-->
     <div class="md:flex hidden align-middle items-center text-center">
       <a
-        href="#"
-        class="flex nav-link active items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
+        (click)="selectSection('inicio')"
+        class="flex cursor-pointer nav-link active items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
       >
         Inicio
       </a>
       <a
-        href="#"
-        class="flex nav-link items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
+        (click)="selectSection('servicios')"
+        class="flex cursor-pointer nav-link items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
       >
         Soluciones
       </a>
       <a
-        href="#"
-        class="flex nav-link items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
+        (click)="selectSection('nosotros')"
+        class="flex cursor-pointer nav-link items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
       >
         Quiénes somos
       </a>
       <a
-        href="#"
-        class="flex nav-link items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
+        (click)="selectSection('contacto')"
+        class="flex cursor-pointer nav-link items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
       >
         Contacto
       </a>

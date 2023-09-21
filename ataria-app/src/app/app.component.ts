@@ -8,9 +8,11 @@ import { initFlowbite } from 'flowbite';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ataria-app';
+  title = 'Ataria Web';
 
-  ngOnInit(): void {
-    initFlowbite();
+  selectedSection: string = 'inicio';
+
+  onSectionSelected(section: string) {
+    this.selectedSection = section;
   }
 }
