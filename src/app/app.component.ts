@@ -10,9 +10,4 @@ import { initFlowbite } from 'flowbite';
 export class AppComponent {
   title = 'Ataria Web';
 
-  selectedSection: string = 'inicio';
-
-  onSectionSelected(section: string) {
-    this.selectedSection = section;
-  }
 }
