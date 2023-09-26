@@ -43,31 +43,31 @@
 <header id="navbar">
   <nav class="bg-slate-50 flex h-auto w-full justify-between px-10">
     <!--Logo-->
-    <a class="py-3" href="">
+    <a class="py-3" routerLink="/">
       <img src="assets/logo.jpg" alt="Logo Ataria" class="w-full h-20" />
     </a>
     <!--Opciones-->
     <div class="md:flex hidden align-middle items-center text-center">
       <a
-        href=""
+        routerLink="/"
         class="flex cursor-pointer nav-link active items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
       >
         Inicio
       </a>
       <a
-        href="/servicios"
+        routerLink="/servicios"
         class="flex cursor-pointer nav-link items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
       >
         Soluciones
       </a>
       <a
-        href="/nosotros"
+        routerLink="/nosotros"
         class="flex cursor-pointer nav-link items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
       >
         Quiénes somos
       </a>
       <a
-        href="/contacto"
+        routerLink="/contacto"
         class="flex cursor-pointer nav-link items-center p-3 mx-2 h-full hover:border-b-4 hover:text-ataria-color border-solid border-ataria-color transition duration-500"
       >
         Contacto
@@ -93,9 +93,15 @@
     </div>
   </nav>
   <div id="mobile-menu" class="md:hidden hidden bg-slate-50 p-5">
-    <a href="" class="block text-black text-center p-3">Inicio</a>
-    <a href="/servicios" class="block text-black text-center p-3">Soluciones</a>
-    <a href="/nosotros" class="block text-black text-center p-3">Quiénes somos</a>
-    <a href="/contacto" class="block text-black text-center p-3">Contacto</a>
+    <a routerLink="" class="block text-black text-center p-3">Inicio</a>
+    <a routerLink="/servicios" class="block text-black text-center p-3"
+      >Soluciones</a
+    >
+    <a routerLink="/nosotros" class="block text-black text-center p-3"
+      >Quiénes somos</a
+    >
+    <a routerLink="/contacto" class="block text-black text-center p-3"
+      >Contacto</a
+    >
   </div>
 </header>

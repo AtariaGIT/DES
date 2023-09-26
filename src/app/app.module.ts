@@ -15,7 +15,8 @@ import { FormsModule } from '@angular/forms';
 register();
 
 const appRoutes:Routes=[
-  {path:'', component:HomeComponent },
+  {path: '', redirectTo:'/home', pathMatch: 'full'},
+  {path:'home', component:HomeComponent },
   {path:'servicios', component:ServicioComponent},
   {path:'nosotros', component:NosotrosComponent},
   {path:'contacto', component:ContactoComponent},
