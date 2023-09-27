@@ -1,0 +1,20 @@
+#banner{
+    width: 100%;
+    background-image: linear-gradient(rgba(165, 165, 165, 0), rgba(0, 0, 0, 0.2)),
+      url(../../../assets/banner3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.contenedor{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.contenedor img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}

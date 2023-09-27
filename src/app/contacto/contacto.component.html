@@ -13,67 +13,65 @@
       name="simple-contact-form"
       accept-charset="utf-8"
       action="https://formspree.io/f/xaygpzpe"
-      method="post"
+      method="POST"
     >
-      <fieldset>
-        <label for="" class="block text-black font-semibold"
-          >Nombre Completo</label
-        >
-        <input
-          placeholder="Nombre*"
-          type="text"
-          name="name"
-          id="full-name"
-          class="w-full border border-gray-600 rounded-md py-2 px-3 my-3 focus:outline-none focus:border-blue-500"
-          minlength="2"
-          required
-        />
-        <span id="errorNombre"></span>
-        <label for="" class="block text-black font-semibold"
-          >Correo electrónico</label
-        >
-        <input
-          placeholder="Email*"
-          name="_replyto"
-          id="email-address"
-          id="email"
-          class="w-full border border-gray-600 rounded-md py-2 px-3 my-3 focus:outline-none focus:border-blue-500"
-          minlength="8"
-          required
-        />
-        <span id="errorEmail"></span>
-        <label class="block text-black font-semibold" for="telephone"
-          >Teléfono (Opcional)</label
-        >
-        <input
+      <label for="" class="block text-black font-semibold"
+        >Nombre Completo</label
+      >
+      <input
+        placeholder="Nombre*"
+        type="text"
+        name="name"
+        id="full-name"
         class="w-full border border-gray-600 rounded-md py-2 px-3 my-3 focus:outline-none focus:border-blue-500"
-          type="telephone"
-          name="telephone"
-          id="telephone"
-          placeholder="(+56) 9 5555 5555"
-        />
-        <label for="" class="block text-black font-semibold">Mensaje</label>
-        <textarea
-          placeholder="¿Qué tipo de solución requieres?"
-          name="message"
-          id="message"
-          cols="30"
-          rows="5"
-          class="w-full border border-gray-600 rounded-md py-2 px-3 my-3 focus:outline-none focus:border-blue-500"
-          required
-          minlength="4"
-          maxlength="900"
-        ></textarea>
-        <div class="mt-6">
-          <button
-            type="submit"
-            value="Submit"
-            class="bg-ataria-color hover:bg-cyan-700 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue active:bg-cyan-700"
-          >
-            Enviar
-          </button>
-        </div>
-      </fieldset>
+        minlength="2"
+        required
+      />
+      <span id="errorNombre"></span>
+      <label for="" class="block text-black font-semibold"
+        >Correo electrónico</label
+      >
+      <input
+        placeholder="Email*"
+        name="_replyto"
+        id="email-address"
+        id="email"
+        class="w-full border border-gray-600 rounded-md py-2 px-3 my-3 focus:outline-none focus:border-blue-500"
+        minlength="8"
+        required
+      />
+      <span id="errorEmail"></span>
+      <label class="block text-black font-semibold" for="telephone"
+        >Teléfono (Opcional)</label
+      >
+      <input
+        class="w-full border border-gray-600 rounded-md py-2 px-3 my-3 focus:outline-none focus:border-blue-500"
+        type="telephone"
+        name="telephone"
+        id="telephone"
+        placeholder="(+56) 9 5555 5555"
+      />
+      <label for="" class="block text-black font-semibold">Mensaje</label>
+      <textarea
+        placeholder="¿Qué tipo de solución requieres?"
+        name="message"
+        id="message"
+        cols="30"
+        rows="5"
+        class="w-full border border-gray-600 rounded-md py-2 px-3 my-3 focus:outline-none focus:border-blue-500"
+        required
+        minlength="4"
+        maxlength="900"
+      ></textarea>
+      <div class="mt-6">
+        <button
+          type="submit"
+          value="Submit"
+          class="bg-ataria-color hover:bg-cyan-700 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline-blue active:bg-cyan-700"
+        >
+          Enviar
+        </button>
+      </div>
     </form>
   </div>
 </section>
